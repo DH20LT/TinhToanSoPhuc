@@ -9,12 +9,8 @@ namespace ComplexNumberCalculator
     class SoPhuc
     {
         float PhanThuc, PhanAo;
-        public SoPhuc(float PhanThuc, float PhanAo)
-        {
-            Console.WriteLine("Tạo constructor với 2 tham số");
-            this.PhanThuc = PhanThuc;
-            this.PhanAo = PhanAo;
-        }
+
+        
         public float getThuc()
         {
             return PhanThuc;
@@ -30,6 +26,17 @@ namespace ComplexNumberCalculator
         public void setAo(float a)
         {
             PhanAo = a;
+        }
+
+        public SoPhuc(){
+            PhanThuc = 0;
+            PhanAo = 0;
+        }
+        public SoPhuc(float PhanThuc, float PhanAo)
+        {
+            //Console.WriteLine("Tạo constructor với 2 tham số");
+            this.PhanThuc = PhanThuc;
+            this.PhanAo = PhanAo;
         }
         public void NhapSoPhuc(int ThuTu)
         {
